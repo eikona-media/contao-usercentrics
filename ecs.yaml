@@ -2,6 +2,14 @@ imports:
   - { resource: 'vendor/contao/easy-coding-standard/config/set/contao.yaml' }
 
 parameters:
+  file_extensions:
+    - php
+    - html5
+  skip:
+    SlevomatCodingStandard\Sniffs\Variables\UnusedVariableSniff:
+      - '*.html5'
+    SlevomatCodingStandard\Sniffs\TypeHints\DisallowArrayTypeHintSyntaxSniff:
+      - '*/Models/*'
   cache_directory: '%sys_get_temp_dir%/ecs_self_cache'
 
 services:

@@ -36,7 +36,7 @@
   },
   "scripts": {
     "cs-fixer": [
-      "vendor/bin/ecs check src/ contao/ --fix --ansi"
+      "vendor/bin/ecs check contao/ src/ --fix --ansi"
     ]
   }
 }
