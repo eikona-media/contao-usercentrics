@@ -18,5 +18,5 @@ Add Repository to composer.json:
 Run the following command in your project directory:
 
 ```bash
-php composer.phar require eikona-media/contao-toolkit
+php composer.phar require eikona-media/contao-usercentrics
 ```
