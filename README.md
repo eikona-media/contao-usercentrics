@@ -4,8 +4,19 @@ This Bundle provides an integration of https://usercentrics.com/.
 
 ## Installation
 
-Install the bundle via Composer:
+Add Repository to composer.json:
 
+```json
+"repositories": [
+    {
+        "type": "composer",
+        "url": "https://packages.eikona-media.de"
+    }
+]
 ```
-composer require eikona-media/contao-usercentrics
+
+Run the following command in your project directory:
+
+```bash
+php composer.phar require eikona-media/contao-toolkit
 ```
