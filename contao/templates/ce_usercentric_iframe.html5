@@ -1,0 +1,36 @@
+<?php if (!empty($this->url)): ?>
+    <!-- indexer::stop -->
+<div class="<?= $this->class ?> block"<?= $this->cssID ?>>
+    <?php if ($this->headline): ?>
+        <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+    <?php endif ?>
+
+    <?php if ($this->usercentricsActive === 1 && $this->usercentricsProtectorActive === 1): ?>
+        <iframe frameborder="0"
+                uc-custom-src="<?= $this->iframeSrc ?>"
+                data-usercentrics="<?= $this->iframeUcServiceName ?>"
+                style="width: <?= $this->iframeWidth ?>; height: <?= $this->iframeHeight ?>;">
+        </iframe>
+        <div class="uc-embedding-container"
+             style="width: <?= $this->iframeWidth ?>; height: <?= $this->iframeHeight ?>; display: none;">
+            <div class="uc-embedding-wrapper">
+                <?= $this->iframeUcHintText ?>
+                <div class="uc-embedding-buttons">
+                    <button class="uc-embedding-more-info">
+                        <?= $this->trans('default.uc_embedding_more_info', [], 'contao_default') ?>
+                    </button>
+                    <button class="uc-embedding-accept">
+                        <?= $this->trans('default.uc_embedding_accept', [], 'contao_default') ?>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <?php else: ?>
+        <iframe frameborder="0"
+                src="<?= $this->iframeSrc ?>"
+                style="width: <?= $this->iframeWidth ?>; height: <?= $this->iframeHeight ?>;"></iframe>
+    <?php endif; ?>
+
+    </div>
+    <!-- indexer::continue -->
+<?php endif; ?>

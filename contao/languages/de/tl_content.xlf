@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file source-language="en" target-language="de">
+        <body>
+            <trans-unit id="tl_content.iframe_legend">
+                <source>iframe settings</source>
+                <target>iframe-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeSrc.0">
+                <source>iframe source</source>
+                <target>iframe Quelle</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeSrc.1">
+                <source>Please enter a web address (http://…), an e-mail address (mailto:…) or an insert tag.</source>
+                <target>Geben Sie eine Web-Adresse (http://…), eine E-Mail-Adresse (mailto:…) oder ein Inserttag ein..</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeUcServiceName.0">
+                <source>Usercentrics Service Name</source>
+                <target>Usercentrics-Service Name</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeUcServiceName.1">
+                <source>Please enter the Name of the Usercentrics Data Processing Service to listen to.</source>
+                <target>Bitte geben Sie den Name des Usercentrics Data Processing Service ein, auf den gehört werden soll.</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeUcHintText.0">
+                <source>Hint text while the Usercentrics blocking</source>
+                <target>Hinweis-Text während des Usercentrics blocking</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeUcHintText.1">
+                <source>Please enter the Hint text while the Usercentrics blocking.</source>
+                <target>Bitte geben Sie den Hinweis-Text während des Usercentrics blocking.</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeWidth.0">
+                <source>iframe width</source>
+                <target>iframe-Breite</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeWidth.1">
+                <source>Width of the iframe.</source>
+                <target>Breite des iframe.</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeHeight.0">
+                <source>iframe height</source>
+                <target>iframe-Höhe</target>
+            </trans-unit>
+            <trans-unit id="tl_content.iframeHeight.1">
+                <source>Height of the iframe.</source>
+                <target>Höhe des iframe.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

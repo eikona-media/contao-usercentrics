@@ -1,0 +1,9 @@
+imports:
+  - { resource: 'vendor/contao/easy-coding-standard/config/set/contao.yaml' }
+
+parameters:
+  cache_directory: '%sys_get_temp_dir%/ecs_self_cache'
+
+services:
+  PhpCsFixer\Fixer\Comment\HeaderCommentFixer:
+    header: "This file is part of Usercentrics Bundle for Contao Open Source CMS.\n\n(c) eikona-media.de\n\n@license MIT"

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file source-language="en" target-language="de">
+        <body>
+            <trans-unit id="tl_page.usercentrics_legend">
+                <source>Usercentrics</source>
+                <target>Usercentrics</target>
+            </trans-unit>
+            <trans-unit id="tl_page.usercentricsActive.0">
+                <source>Activate Usercentrics</source>
+                <target>Usercentrics aktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_page.usercentricsActive.1">
+                <source>Activate the usercentrics script for this root page.</source>
+                <target>Das Usercentrics-Skript für diesen Startpunkt aktivieren.</target>
+            </trans-unit>
+            <trans-unit id="tl_page.usercentricsSettingId.0">
+                <source>Usercentrics setting-ID</source>
+                <target>Usercentrics Setting-ID</target>
+            </trans-unit>
+            <trans-unit id="tl_page.usercentricsSettingId.1">
+                <source>Please enter the usercentrics setting-ID.</source>
+                <target>Bitte geben Sie die Usercentrics Setting-ID ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_page.usercentricsProtectorActive.0">
+                <source>Activate Usercentrics Smart Data Protector</source>
+                <target>Usercentrics Smart Data Protector aktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_page.usercentricsProtectorActive.1">
+                <source>Activate the Usercentrics Smart Data Protector.</source>
+                <target>Aktiviert den Usercentrics Smart Data Protector.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
