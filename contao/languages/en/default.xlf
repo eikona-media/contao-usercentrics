@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file source-language="en" target-language="en">
+        <body>
+            <trans-unit id="CTE.usercentrics_iframe.0">
+                <source>Usercentric Iframe</source>
+            </trans-unit>
+            <trans-unit id="CTE.usercentrics_iframe.1">
+                <source>Show iFrame with usercentrics params.</source>
+            </trans-unit>
+            <trans-unit id="default.uc_embedding_more_info">
+                <source>More information</source>
+            </trans-unit>
+            <trans-unit id="default.uc_embedding_accept">
+                <source>Accept</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
