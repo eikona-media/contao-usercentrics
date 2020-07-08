@@ -1,11 +1,11 @@
-<?php if (!empty($this->url)): ?>
+<?php if (!empty($this->iframeSrc)): ?>
     <!-- indexer::stop -->
 <div class="<?= $this->class ?> block"<?= $this->cssID ?>>
     <?php if ($this->headline): ?>
         <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
     <?php endif ?>
 
-    <?php if ($this->usercentricsActive === 1 && $this->usercentricsProtectorActive === 1): ?>
+    <?php if ($this->usercentricsActive === 1 && $this->usercentricsProtectorActive === 1 && !empty($this->iframeUcServiceName)): ?>
         <iframe frameborder="0"
                 uc-custom-src="<?= $this->iframeSrc ?>"
                 data-usercentrics="<?= $this->iframeUcServiceName ?>"

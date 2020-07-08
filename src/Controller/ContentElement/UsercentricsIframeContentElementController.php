@@ -22,7 +22,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @ContentElement("usercentrics_iframe", category="includes", template="ce_usercentric_iframe")
+ * @ContentElement("usercentrics_iframe", category="includes", template="ce_usercentrics_iframe")
  */
 class UsercentricsIframeContentElementController extends AbstractContentElementController
 {
