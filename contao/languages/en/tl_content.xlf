@@ -7,7 +7,6 @@
             </trans-unit>
             <trans-unit id="tl_content.iframeSrc.0">
                 <source>iframe source</source>
-                <target>iframe Quelle</target>
             </trans-unit>
             <trans-unit id="tl_content.iframeSrc.1">
                 <source>Please enter a web address (http://…), an e-mail address (mailto:…) or an insert tag.</source>
