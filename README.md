@@ -1,19 +1,9 @@
 # Usercentrics for Contao Open Source CMS
 
 This Bundle provides an integration of https://usercentrics.com/.
+It also enables the blocking of iFrames via usercentrics using a content element.
 
 ## Installation
-
-Add Repository to composer.json:
-
-```json
-"repositories": [
-    {
-        "type": "composer",
-        "url": "https://packages.eikona-media.de"
-    }
-]
-```
 
 Run the following command in your project directory:
 
