@@ -10,11 +10,13 @@ declare(strict_types=1);
  * @license MIT
  */
 
+use Contao\CoreBundle\DataContainer\PaletteManipulator;
+
 $GLOBALS['TL_DCA']['tl_page']['palettes']['__selector__'][] = 'usercentricsActive';
 
-Contao\CoreBundle\DataContainer\PaletteManipulator::create()
-    ->addLegend('usercentrics_legend', 'publish_legend', Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_BEFORE)
-    ->addField(['usercentricsActive'], 'usercentrics_legend', Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_APPEND)
+PaletteManipulator::create()
+    ->addLegend('usercentrics_legend', 'publish_legend', PaletteManipulator::POSITION_BEFORE)
+    ->addField(['usercentricsActive'], 'usercentrics_legend', PaletteManipulator::POSITION_APPEND)
     ->applyToPalette('root', 'tl_page')
     ->applyToPalette('rootfallback', 'tl_page')
 ;

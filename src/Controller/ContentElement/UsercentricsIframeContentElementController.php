@@ -30,7 +30,7 @@ class UsercentricsIframeContentElementController extends AbstractContentElementC
     {
         global $objPage;
 
-        $GLOBALS['TL_JAVASCRIPT']['usercentrics'] = 'bundles/eikonamediacontaousercentrics/usercentrics.js';
+        $GLOBALS['TL_JAVASCRIPT']['usercentrics'] = 'bundles/eikonamediacontaousercentrics/usercentrics.js|static';
 
         $template->iframeSrc = $model->iframeSrc;
         $template->iframeUcServiceName = $model->iframeUcServiceName;

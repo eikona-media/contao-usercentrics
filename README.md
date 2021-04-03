@@ -5,8 +5,8 @@ It also enables the blocking of iFrames via usercentrics using a content element
 
 ## Installation
 
-Run the following command in your project directory:
+Install the bundle via Composer:
 
 ```bash
-php composer.phar require eikona-media/contao-usercentrics
+composer require eikona-media/contao-usercentrics
 ```

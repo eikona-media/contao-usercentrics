@@ -20,10 +20,11 @@ use EikonaMedia\Contao\Usercentrics\EikonaMediaContaoUsercentricsBundle;
 
 class Plugin implements BundlePluginInterface
 {
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(EikonaMediaContaoUsercentricsBundle::class)->setLoadAfter([ContaoCoreBundle::class]),
+            BundleConfig::create(EikonaMediaContaoUsercentricsBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
 }

@@ -14,18 +14,17 @@ namespace EikonaMedia\Contao\Usercentrics\EventListener;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
 use PageModel;
-use Terminal42\ServiceAnnotationBundle\ServiceAnnotationInterface;
 
-class ModifyFrontendPageListener implements ServiceAnnotationInterface
+/**
+ * @Hook("modifyFrontendPage")
+ */
+class ModifyFrontendPageListener
 {
-    const UC_SCRIPT = '<script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="%s" ></script>';
-    const UC_PRIVACY_PROXY = '<meta data-privacy-proxy-server="https://privacy-proxy-server.usercentrics.eu">';
-    const UC_PROTECTOR = '<script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>';
+    public const UC_SCRIPT = '<script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="%s" ></script>';
+    public const UC_PRIVACY_PROXY = '<meta data-privacy-proxy-server="https://privacy-proxy-server.usercentrics.eu">';
+    public const UC_PROTECTOR = '<script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>';
 
-    /**
-     * @Hook("modifyFrontendPage")
-     */
-    public function onModifyFrontendPage(string $buffer, string $templateName): string
+    public function __invoke(string $buffer, string $templateName): string
     {
         if (false === strpos($templateName, 'fe_', 0)) {
             return $buffer;

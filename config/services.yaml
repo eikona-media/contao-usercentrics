@@ -4,4 +4,5 @@ services:
         autoconfigure: true
 
     EikonaMedia\Contao\Usercentrics\:
-        resource: ../src/{Controller,EventListener}
+        resource: '../src/*'
+        exclude: '../src/{DependencyInjection}'
