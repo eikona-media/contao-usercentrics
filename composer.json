@@ -26,6 +26,12 @@
     "issues": "https://github.com/eikona-media/contao-usercentrics/issues",
     "source": "https://github.com/eikona-media/contao-usercentrics"
   },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/rabauss"
+    }
+  ],
   "require": {
     "php": "^7.2 || ^8.0",
     "contao/core-bundle": "^4.9",
