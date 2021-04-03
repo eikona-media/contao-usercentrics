@@ -20,8 +20,8 @@
     "contao/core-bundle": "^4.9"
   },
   "require-dev": {
-    "contao/manager-plugin": "^2.0",
-    "contao/easy-coding-standard": "^1.0"
+    "contao/easy-coding-standard": "^3.0",
+    "contao/manager-plugin": "^2.0"
   },
   "conflict": {
     "contao/manager-plugin": "<2.0 || >=3.0"
@@ -35,7 +35,7 @@
     "contao-manager-plugin": "EikonaMedia\\Contao\\Usercentrics\\ContaoManager\\Plugin"
   },
   "scripts": {
-    "cs-fixer": [
+    "ecs": [
       "vendor/bin/ecs check contao/ src/ --fix --ansi"
     ]
   }
