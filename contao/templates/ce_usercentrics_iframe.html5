@@ -2,35 +2,35 @@
 
 if (!empty($this->iframeSrc)) { ?>
 <!-- indexer::stop -->
-<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?>>
+<div class="<?= $this->class; ?> block"<?= $this->cssID; ?>>
     <?php if ($this->headline) { ?>
-        <<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+        <<?= $this->hl; ?>><?= $this->headline; ?></<?= $this->hl; ?>>
     <?php } ?>
 
     <?php if (1 === $this->usercentricsActive && 1 === $this->usercentricsProtectorActive && !empty($this->iframeUcServiceName)) { ?>
         <iframe frameborder="0"
-                uc-custom-src="<?php echo $this->iframeSrc; ?>"
-                data-usercentrics="<?php echo $this->iframeUcServiceName; ?>"
-                style="width: <?php echo $this->iframeWidth; ?>; height: <?php echo $this->iframeHeight; ?>;">
+                uc-custom-src="<?= $this->iframeSrc; ?>"
+                data-usercentrics="<?= $this->iframeUcServiceName; ?>"
+                style="width: <?= $this->iframeWidth; ?>; height: <?= $this->iframeHeight; ?>;">
         </iframe>
         <div class="uc-embedding-container"
-             style="width: <?php echo $this->iframeWidth; ?>; height: <?php echo $this->iframeHeight; ?>; display: none;">
+             style="width: <?= $this->iframeWidth; ?>; height: <?= $this->iframeHeight; ?>; display: none;">
             <div class="uc-embedding-wrapper">
-                <?php echo $this->iframeUcHintText; ?>
+                <?= $this->iframeUcHintText; ?>
                 <div class="uc-embedding-buttons">
                     <button class="uc-embedding-more-info">
-                        <?php echo $this->trans('default.uc_embedding_more_info', [], 'contao_default'); ?>
+                        <?= $this->trans('default.uc_embedding_more_info', [], 'contao_default'); ?>
                     </button>
                     <button class="uc-embedding-accept">
-                        <?php echo $this->trans('default.uc_embedding_accept', [], 'contao_default'); ?>
+                        <?= $this->trans('default.uc_embedding_accept', [], 'contao_default'); ?>
                     </button>
                 </div>
             </div>
         </div>
     <?php } else { ?>
         <iframe frameborder="0"
-                src="<?php echo $this->iframeSrc; ?>"
-                style="width: <?php echo $this->iframeWidth; ?>; height: <?php echo $this->iframeHeight; ?>;"></iframe>
+                src="<?= $this->iframeSrc; ?>"
+                style="width: <?= $this->iframeWidth; ?>; height: <?= $this->iframeHeight; ?>;"></iframe>
     <?php } ?>
 
 </div>
